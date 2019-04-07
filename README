@@ -1,0 +1,73 @@
+L'application de démo SUPERVENTES nécessite :
+
+1) L'installation de Node et de son gestionnaire de modules
+
+2) Pour le serveur de bases de données :
+  2.1) l'installation du SGBD NoSQL MongoDB
+  2.2) la création de la base SUPERVENTES
+
+3) Pour le serveur Node.js :
+  3.1) l'installation des modules nécessaires au serveur Node
+  3.2) l'exécution du serveur
+
+4) Pour Angular :
+  4.1) l'installation d'Angular (en fait avec Angular CLI)
+  4.2) l'installation des modules nécessaires à Angular
+  4.3) l'exécution du serveur de développement d'Angular
+
+---------------------------------------------------------------------
+Attention : les procédures d'installation sont illustrées sous Linux
+---------------------------------------------------------------------
+
+0) Recopier les dossiers SUPERVENTES_SERVER et SUPERVENTES_CLIENT sur voter machine
+
+1) Installation de Node et son gestionnaire de modules (si non déjà installés) :
+   sudo apt install nodejs
+   sudo apt install npm
+
+2.1) Installation de MongoDB (si non déjà installé) :
+   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4
+   echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+   sudo apt update
+   sudo apt install -y mongodb-org
+   sudo systemctl enable mongod.service
+   sudo service mongod start
+
+2.2) Création de la base de données SUPERVENTES :
+   positionnez-vous dans le dossier SUPERVENTES_SERVER
+   chmod +x creationBase.sh
+   ./creationBase.sh
+   Remarque : l'exécution du script creationBase.sh automatise l'exécution des deux commandes suivantes :
+      mongoimport --db SUPERVENTES --collection produits --file produits.json --jsonArray --drop
+      mongoimport --db SUPERVENTES --collection membres --file membres.json --jsonArray --drop
+
+3.1) L'installation des modules nécessaires au serveur Node :
+   restez positionné dans le dossier SUPERVENTES_SERVER
+   npm install
+   remarque : npm install installe les modules nécessaires
+              suivant les spoécifications du fichier package.json
+
+3.2) L'exécution du serveur :
+   node serveur.js &
+
+Pour tout ce qui suit vous devez être positionné dans le dossier SUPERVENTES_CLIENT
+
+4.1) L'installation d'Angular et d'Angular CLI
+   npm install @angular/cli@latest
+
+4.2) L'installation des modules nécessaires à Angular :
+   npm install
+   remarque : npm install installe les modules nécessaires
+              suivant les spoécifications du fichier package.json
+
+4.3) l'exécution du serveur de développement d'Angular :
+   ng serve -o
+   (l'affichage en rouge d'erreurs dans votre terminal serait très inquiétante)
+
+4.4) Votre navigateur devrait s'ouvrir sur la page de l'application
+   sinon invoquez l'URL suivante : localhost:4200
+   (vous pouvez ouvrir la console de votre navigateur (via F12) pour vérifier
+    la trace des programmes et la présence d'éventuelles erreurs)
+   pour se connecter, utilisez par exemple les identifiants suivants :
+   claire.delune@mailserver.fr
+   123456

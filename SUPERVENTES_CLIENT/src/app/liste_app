@@ -1,0 +1,19 @@
+total 68
+-rw-r--r-- 1 fongus fongus 1110 févr.  3 17:09 app.component.spec.ts
+-rw-r--r-- 1 fongus fongus  348 févr.  3 18:31 authentification.service.spec.ts~
+-rw-r--r-- 1 fongus fongus  383 févr.  4 10:29 authentification.service.spec.ts
+-rw-r--r-- 1 fongus fongus    9 févr.  4 14:05 app.component.css
+-rw-r--r-- 1 fongus fongus  343 févr.  5 08:16 produits.service.spec.ts
+-rw-r--r-- 1 fongus fongus  662 févr.  5 08:49 app-routing.module.ts
+-rw-r--r-- 1 fongus fongus  591 févr.  5 14:01 produits.service.ts~
+-rw-r--r-- 1 fongus fongus  801 févr.  5 14:18 produits.service.ts
+-rw-r--r-- 1 fongus fongus  991 févr.  5 14:24 authentification.service.ts~
+-rw-r--r-- 1 fongus fongus  990 févr.  5 14:59 authentification.service.ts
+-rw-r--r-- 1 fongus fongus 1304 févr.  5 16:53 app.module.ts
+drwxr-xr-x 2 fongus fongus 4096 févr.  5 16:59 menu
+-rw-r--r-- 1 fongus fongus  151 févr.  5 17:02 app.component.html
+-rw-r--r-- 1 fongus fongus  216 févr.  5 17:04 app.component.ts
+drwxr-xr-x 2 fongus fongus 4096 févr. 14 15:55 categories
+drwxr-xr-x 2 fongus fongus 4096 févr. 14 16:10 produits
+drwxr-xr-x 2 fongus fongus 4096 févr. 14 16:11 connexion
+-rw-r--r-- 1 fongus fongus    0 févr. 14 16:19 liste_app

@@ -1,0 +1,9 @@
+<div class="row justify-content-center">
+    <div *ngFor="let produit of produits" class="card">
+        <div class="card-body">
+            <div class="card-text"> {{produit['nom']}} ({{produit['type']}})
+		 <input type="button" value="Mais achetez donc" />
+            </div>
+        </div>
+    </div>
+</div>
