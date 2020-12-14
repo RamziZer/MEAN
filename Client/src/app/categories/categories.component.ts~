@@ -1,0 +1,23 @@
+import { Component, OnInit } from '@angular/core';
+import { ProduitsService } from '../produits.service';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-categories',
+  templateUrl: './categories.component.html',
+  styleUrls: ['./categories.component.css']
+})
+export class CategoriesComponent implements OnInit {
+
+  private categories: String[] = new Array();
+
+  constructor(private produitsService: ProduitsService) { }
+
+  ngOnInit() {
+    this.produitsService.getCategories().subscribe(categories => {
+         console.log("Réception categories");
+         this.categories = categories;
+    });
+  }
+}

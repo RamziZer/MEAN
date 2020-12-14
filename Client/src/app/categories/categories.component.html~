@@ -1,0 +1,17 @@
+<div *ngIf="!connexion">
+  <div class="card-header mx-auto"> En vous connectant, découvrez nos : </div>
+  <div class="card-body">  
+    <div *ngFor="let categorie of categories" class="card">
+       <div class="card-text mx-auto"> {{categorie}}
+    </div>
+  </div>
+  </div>
+</div>
+<div *ngIf="connexion">
+  <div class="card-header">Vous êtes connecté  :</div>
+  <div class="card-body">
+    <div *ngFor="let categorie of categories">
+       <div class="card-text mx-auto"> <input type="button" value="Allez vite découvrir nos {{categorie}}"/> </div>      
+    </div>
+  </div>
+</div>

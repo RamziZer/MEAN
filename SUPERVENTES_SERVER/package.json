@@ -9,7 +9,7 @@
   "author": "Pierre POMPIDOR",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "mongodb": "^3.2.3"
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3"
   }
 }

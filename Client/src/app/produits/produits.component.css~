@@ -1,0 +1,10 @@
+* { body-size: 7pt; }
+.card { body-size: 8pt;
+	margin: 5px;
+	padding: 5px;
+        background-color: rgba(221, 243, 171);
+      }
+button { body-size: 5pt;
+         background-color: rgba(244, 235, 66);
+       }
+
