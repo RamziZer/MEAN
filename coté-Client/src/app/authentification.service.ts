@@ -10,6 +10,7 @@ const httpOptions = {
   })
 };
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -32,5 +33,10 @@ export class AuthentificationService {
 
   verificationConnexion(identifiants: any): Observable<any> {
       return this.http.post(this.baseURL+'membre/connexion', JSON.stringify(identifiants), httpOptions);
+    }
+  verificationInscription(identifiants: any): Observable<any> {
+    return  this.http.post(this.baseURL+'inscription',// appell du srvice à cette adresse
+    JSON.stringify(identifiants),  //   passage de donnes en format Json ligne 33
+    httpOptions);// affichage du message de node
   }
 }

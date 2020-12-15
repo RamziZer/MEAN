@@ -17,7 +17,8 @@ import { ProduitsService } from './produits.service';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { ProduitsComponent } from './produits/produits.component';
 import { CategoriesComponent } from './categories/categories.component';
-import { MenuComponent } from './menu/menu.component'
+import { MenuComponent } from './menu/menu.component';
+import { InscriptionComponent } from './inscription/inscription.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MenuComponent } from './menu/menu.component'
     ConnexionComponent,
     ProduitsComponent,
     CategoriesComponent,
-    MenuComponent
+    MenuComponent,
+    InscriptionComponent
   ],
   imports: [
     BrowserModule,

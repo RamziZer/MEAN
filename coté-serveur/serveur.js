@@ -69,6 +69,25 @@ MongoClient.connect(url, {useNewUrlParser: true, useUnifiedTopology: true} , (er
             res.end(JSON.stringify({"resultat": 0, "message": e}));
         }
     });
+    /* Inscription */
+    app.post("/inscription",(req,res)=> {
+        console.log(req.body);
+        try {
+            db.collection("membres")
+                .find(req.body)
+                .toArray((err, documents) => {
+                    if (documents != undefined && documents.length == 1)
+                        res.end(JSON.stringify({ "resultat": 1, "message": "Déjà inscrit" }));
+                    else {
+                        db.collection("membres")
+                            .insertOne(req.body);
+                        res.end(JSON.stringify({ "resultat": 1, "message": "Inscription réussie" }))
+                    }
+                });
+        } catch (e) {
+            res.end(JSON.stringify({ "resultat": 0, "message": e }));
+        }
+    });
 });
 
 app.listen(8888);
