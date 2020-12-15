@@ -3,7 +3,7 @@
     <!--div class="navbar-header">
       <a class="navbar-brand" href="#">Menu : </a>
     </div-->    
-    <ul *ngIf="!identification(connected_user)" class="navbar-nav">
+    <ul *ngIf="!identification()" class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link active" routerLink="/membres/connexion">Se connecter</a>
         </li>
@@ -11,7 +11,7 @@
             <a class="nav-link disabled" routerLink="/produits">Liste des produits</a>
         </li>
     </ul>
-    <ul *ngIf="identification(connected_user)" class="navbar-nav">
+    <ul *ngIf="identification()" class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link" routerLink="/produits">liste des produit</a>
         </li>

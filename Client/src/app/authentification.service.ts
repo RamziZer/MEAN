@@ -30,7 +30,7 @@ export class AuthentificationService {
       this.connected_user = data;
   }
 
-  verificationConnexion(identifiants): Observable<any> {
+  verificationConnexion(identifiants: any): Observable<any> {
       return this.http.post(this.baseURL+'membre/connexion', JSON.stringify(identifiants), httpOptions);
   }
 }
