@@ -1,0 +1,11 @@
+
+ [
+
+
+ 	{"genre": "enfant", "catégorie": "eau de parfum", "marque": "disney", "nom": "eau my Bb", "formulation": "vegan", "prix": 33, "contenance": "50ml", "image": "assets/pictures/eau my Bb.jpg"},
+
+    {"genre": "mixte", "catégorie": "eau de parfum", "marque": "gautal", "nom": "sable", "formulation": "vegan", "prix": 25, "contenance": "10ml", "image": "assets/pictures/sable.jpg"},
+
+    {"genre": "homme", "catégorie": "deodorant", "marque": "Chanel", "nom": "bleu de Chanel", "formulation": "naturel", "prix": 39.90, "contenance": "75ml", "image": "assets/pictures/bleu de Chanel.jpg"}
+
+]

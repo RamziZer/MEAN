@@ -1,0 +1,34 @@
+[
+
+   {"genre": "femme", "catégorie": "eau de parfum", "marque": "Dior", "nom": "Miss Dior", "formulation": "vegan", "prix": 97, "contenance": "50ml", "image": "assets/pictures/Miss Dior.jpg"},
+
+   {"genre": "femme", "catégorie": "parfum cheveux", "marque": "KAROLINA HERRERA", "nom": "Good girl hair mist", "formulation": "naturel", "prix": 37, "contenance": "40ml", "image": "assets/pictures/Good girl hair mist.jpg"},
+
+   {"genre": "homme", "catégorie": "eau de toilette", "marque": "Hugo Boss", "nom": "Boss Bottled", "formulation": "vegan", "prix": 89, "contenance": "50ml", "image": "assets/pictures/Boss Bottled.jpg"},
+
+   {"genre": "enfant", "catégorie": "eau de toilette", "marque": "JACADI", "nom": "Mademoiselle", "formulation": "vegan", "prix": 49, "contenance": "25ml", "image": "assets/pictures/Mademoiselle.jpg"},
+
+   {"genre": "homme", "catégorie": "eau de parfum", "marque": "Dior", "nom": "Sauvage", "formulation": "naturel", "prix": 112, "contenance": "50ml", "image": "assets/pictures/Sauvage.jpg"},
+
+   {"genre": "femme", "catégorie": "soin corps", "marque": "Yves saint laurent", "nom": "mon paris", "formulation": "vegan", "prix": 95, "contenance": "50ml", "image": "assets/pictures/mon paris.jpg"},
+
+   {"genre": "enfant", "catégorie": "eau de toilette", "marque": "JACADI", "nom": "jeune homme", "formulation": "vegan", "prix": 97, "contenance": "50ml", "image": "assets/pictures/jeune homme.jpg"},
+
+   {"genre": "homme", "catégorie": "deodorant", "marque": "Chanel", "nom": "allure homme sport", "formulation": "vegan", "prix": 47, "contenance": "100ml", "image": "assets/pictures/allure homme sport.jpg"},
+
+   {"genre": "mixte", "catégorie": "eau de parfum", "marque": "Hermès", "nom": "un jardin sur le nil", "formulation": "vegan", "prix": 90, "contenance": "50ml", "image": "assets/pictures/un jardin sur le nil.jpg"},
+
+   {"genre": "mixte", "catégorie": "eau de parfum", "marque": "Tom ford", "nom": "Black Orchid", "formulation": "naturel", "prix": 78, "contenance": "100ml", "image": "assets/pictures/Black Orchid.jpg"},
+
+   {"genre": "homme", "catégorie": "eau de parfum", "marque": "paco rabanne", "nom": "1 million", "formulation": "vegan", "prix": 90, "contenance": "50ml", "image": "assets/pictures/1 million.jpg"},
+
+   {"genre": "femme", "catégorie": "soin corps", "marque": "Guerlin", "nom": "la petite robe noire", "formulation": "naturel", "prix": 90, "contenance": "50ml", "image": "assets/pictures/la petite robe noire.jpg"},
+
+   {"genre": "enfant", "catégorie": "eau de parfum", "marque": "disney", "nom": "eau my Bb", "formulation": "vegan", "prix": 33, "contenance": "50ml", "image": "assets/pictures/eau my Bb.jpg"},
+
+   {"genre": "mixte", "catégorie": "eau de parfum", "marque": "gautal", "nom": "sable", "formulation": "vegan", "prix": 25, "contenance": "10ml", "image": "assets/pictures/sable.jpg"},
+
+   {"genre": "homme", "catégorie": "deodorant", "marque": "Chanel", "nom": "bleu de Chanel", "formulation": "naturel", "prix": 39.90, "contenance": "75ml", "image": "assets/pictures/bleu de Chanel.jpg"}
+
+
+]
