@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
 })
 export class CategoriesComponent implements OnInit {
 
-  private connexion: boolean = false;
-  private categories: String[] = new Array();
+  public connexion: boolean = false;
+  public categories: String[] = new Array();
 
   constructor(private authService: AuthentificationService,
               private produitsService: ProduitsService) { }

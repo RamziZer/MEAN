@@ -13,8 +13,8 @@ app.use(function (req, res, next) {
 const MongoClient = require('mongodb').MongoClient;
 const ObjectID    = require('mongodb').ObjectId;
 const url         = "mongodb://localhost:27017";
-
-MongoClient.connect(url, {useNewUrlParser: true}, (err, client) => {
+ 
+MongoClient.connect(url, {useNewUrlParser: true, useUnifiedTopology: true} , (err, client) => {
     let db = client.db("SUPERVENTES");
 
     /* Liste des produits */

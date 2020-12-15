@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  private connected_user: string = '';
+  public connected_user: string = '';
 
   constructor(private authService: AuthentificationService,
               private router: Router) {}
@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
 	this.router.navigate(['/categories']);
   }
 
-  private identification(): Boolean {
+  public identification(): Boolean {
         if (this.connected_user != '' ) return true;
 	else return false;
   }
